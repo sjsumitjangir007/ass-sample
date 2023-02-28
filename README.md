@@ -72,7 +72,3 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-
-## for database connectivity
-https://api.elephantsql.com/console/f1063826-1aad-42ab-97c1-fb4360591e07/browser?#
-
