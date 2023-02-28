@@ -72,3 +72,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
+### Kindly update __.env__ file for postgres-db connectivity
