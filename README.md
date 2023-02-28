@@ -30,7 +30,11 @@
 
 ```bash
 $ npm install
+
 ```
+>  Kindly update __.env__ file for postgres-db connectivity
+
+> I have alreaded provided the link for csv file and will provide more data in that
 
 ## Running the app
 
@@ -72,4 +76,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-### Kindly update __.env__ file for postgres-db connectivity
+
