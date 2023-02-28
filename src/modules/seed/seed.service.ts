@@ -47,7 +47,7 @@ export class SeedService {
           u.name = `${csvUser['name.firstName'] || ''} ${
             csvUser['name.lastName'] || ''
           }`;
-          u.age = csvUser.age;
+          u.age = csvUser.age || 10;
           u.address = {
             line1: csvUser['address.line1'],
             line2: csvUser['address.line2'],
@@ -58,6 +58,7 @@ export class SeedService {
             gender: csvUser.gender,
           };
           usersList.push(u);
+          console.log(u);
           const uu = await this.usersService.addOne(u);
           console.log('Data added top db uu:- ', uu);
         });

@@ -12,6 +12,6 @@ import { UsersService } from './entities/users/users.service';
 })
 export class DatabaseModule {
   constructor() {
-    console.log('DB Module init');
+    // console.log('DB Module init');
   }
 }

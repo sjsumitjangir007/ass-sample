@@ -9,6 +9,6 @@ import { CSVParserService } from './csv_parser.service';
 })
 export class CSVParserModule {
   constructor() {
-    console.log('CSV Parser Module init');
+    // console.log('CSV Parser Module init');
   }
 }

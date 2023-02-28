@@ -5,7 +5,7 @@ import { EventEmitter, Readable } from 'stream';
 @Injectable()
 export class CSVParserService {
   constructor() {
-    console.log('CSV Parser Service init');
+    // console.log('CSV Parser Service init');
   }
 
   parse(data: string): EventEmitter {
@@ -21,16 +21,23 @@ export class CSVParserService {
           .trim()
           .split(',')
           .map((colV) => {
-            return colV.trim();
+            // console.log('Col:- ', colV);
+            if (colV) {
+              const _v = colV.trim();
+              return _v;
+            }
           });
         emitter.emit('headers', headers);
       } else {
         const ins = {};
-        const cols = line.trim().split(', ');
+        const cols = line.trim().split(',');
         cols.forEach((colV, index) => {
-          const _v = colV.trim();
-          if (headers[index]) {
-            ins[headers[index]] = _v;
+          //   console.log('row Col:- ', colV);
+          if (colV) {
+            const _v = colV.trim();
+            if (headers[index]) {
+              ins[headers[index]] = _v;
+            }
           }
         });
         row.push(ins);
